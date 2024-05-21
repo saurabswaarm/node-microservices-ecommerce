@@ -1,0 +1,2 @@
+GET http://localhost:3011/categories
+Accept: application/json

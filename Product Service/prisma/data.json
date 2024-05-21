@@ -1,0 +1,136 @@
+{
+  "categories": [
+    {
+      "data": {
+        "name": "Electronics"
+      }
+    },
+    {
+      "data": {
+        "name": "Books"
+      }
+    }
+  ],
+  "products": [
+    {
+      "name": "samsung galaxy s20",
+      "description": "flagship samsung smartphone",
+      "price": 1099.99,
+      "category": "Electronics"
+    },
+    {
+      "name": "dell xps 13",
+      "description": "premium ultrabook",
+      "price": 1399.99,
+      "category": "Electronics"
+    },
+    {
+      "name": "sony wh-1000xm4",
+      "description": "noise-cancelling headphones",
+      "price": 349.99,
+      "category": "Electronics"
+    },
+    {
+      "name": "nintendo switch",
+      "description": "hybrid gaming console",
+      "price": 299.99,
+      "category": "Electronics"
+    },
+    {
+      "name": "canon eos r5",
+      "description": "professional mirrorless camera",
+      "price": 3899.99,
+      "category": "Electronics"
+    },
+    {
+      "name": "apple watch series 6",
+      "description": "premium smartwatch",
+      "price": 399.99,
+      "category": "Electronics"
+    },
+    {
+      "name": "fitbit charge 4",
+      "description": "fitness tracker",
+      "price": 149.99,
+      "category": "Electronics"
+    },
+    {
+      "name": "bose quietcomfort 35 ii",
+      "description": "wireless over-ear headphones",
+      "price": 299.99,
+      "category": "Electronics"
+    },
+    {
+      "name": "lg oled cx series",
+      "description": "4k oled tv",
+      "price": 2799.99,
+      "category": "Electronics"
+    },
+    {
+      "name": "gopro hero 9 black",
+      "description": "action camera",
+      "price": 449.99,
+      "category": "Electronics"
+    },
+    {
+      "name": "the great gatsby",
+      "description": "classic novel by f. scott fitzgerald",
+      "price": 12.99,
+      "category": "Books"
+    },
+    {
+      "name": "to kill a mockingbird",
+      "description": "classic novel by harper lee",
+      "price": 10.99,
+      "category": 1
+    },
+    {
+      "name": "1984",
+      "description": "dystopian fiction by george orwell",
+      "price": 9.99,
+      "category": 1
+    },
+    {
+      "name": "pride and prejudice",
+      "description": "classic novel by jane austen",
+      "price": 11.99,
+      "category": 1
+    },
+    {
+      "name": "the catcher in the rye",
+      "description": "coming-of-age novel by j.d. salinger",
+      "price": 8.99,
+      "category": 1
+    },
+    {
+      "name": "harry potter and the sorcerer's stone",
+      "description": "first book in the harry potter series by j.k. rowling",
+      "price": 14.99,
+      "category": 1
+    },
+    {
+      "name": "the hobbit",
+      "description": "fantasy novel by j.r.r. tolkien",
+      "price": 15.99,
+      "category": 1
+    },
+    {
+      "name": "the alchemist",
+      "description": "philosophical novel by paulo coelho",
+      "price": 13.99,
+      "category": 1
+    },
+    {
+      "name": "little women",
+      "description": "classic novel by louisa may alcott",
+      "price": 10.99,
+      "category": 1
+    },
+    {
+      "name": "frankenstein",
+      "description": "gothic novel by mary shelley",
+      "price": 11.99,
+      "category": 1
+    }
+  ]
+}
