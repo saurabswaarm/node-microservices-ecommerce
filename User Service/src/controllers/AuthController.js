@@ -11,24 +11,38 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AuthController = void 0;
 const UserService_1 = require("../services/UserService");
+const express_1 = require("express");
 // user controller class will have two methods register user and login user
 class AuthController {
     constructor() {
-        this.service = new UserService_1.UserService();
+        this.router = (0, express_1.Router)();
+        this.userService = new UserService_1.UserService();
         this.register = this.register.bind(this);
         this.login = this.login.bind(this);
+        this.router.post('/register', this.register);
+        this.router.post('/login', this.login);
     }
-    register(req, res) {
+    register(req, res, next) {
         return __awaiter(this, void 0, void 0, function* () {
-            const data = req.body;
-            const result = yield this.service.create(data);
-            res.send(result);
+            try {
+                const result = yield this.userService.create(req.body);
+                res.status(200).send(result);
+            }
+            catch (error) {
+                next(error);
+            }
         });
     }
-    login(req, res) {
+    login(req, res, next) {
         return __awaiter(this, void 0, void 0, function* () {
-            const data = req.body;
-            res.send(result);
+            try {
+                const token = yield this.userService.findAndValidateUser(req.body);
+                res.setHeader('Authorization', 'Bearer ' + token);
+                res.status(201).send({ message: "Login successful" });
+            }
+            catch (error) {
+                next(error);
+            }
         });
     }
 }
